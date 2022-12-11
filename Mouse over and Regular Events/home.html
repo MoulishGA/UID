@@ -1,0 +1,139 @@
+<!DOCTYPE hmtl>
+    <head>
+            <style>
+                img
+                {
+                    height: 400px;
+                }
+                body 
+                {
+                    background: linear-gradient(to right, #ffffff 50%, #aaaaaa 100%);
+                }   
+                .topnav{
+                    overflow: hidden;
+                    background-color: #0ac70a;
+                    padding: 1%;
+                }
+                div>a{
+                    padding-left: 12px;
+
+                }
+                .txt{
+                    text-decoration: none;
+                    color: black;
+                }
+                a.txt:hover{
+                    color: #ffffff;
+                }
+
+
+            </style>
+            <script>
+            var i=0;
+            var j=0;
+            var d=0;
+            var h=0;
+            var s=0;
+            function sitstand()
+            {
+                if(i==0)
+                {
+                    document.getElementById("switch").src = "1.jpeg";
+                    i=1;
+                }
+                else
+                {
+                    document.getElementById("switch").src = "2.jpeg";
+                    i=0;
+                }
+            }
+            function dog()
+            {
+                
+                if(j==0)
+                {
+                    document.getElementById("pet").src = "4.jpeg";
+                    j=1;
+                }
+                else
+                {
+                    document.getElementById("pet").src = "3.jpeg";
+                    j=0;
+                }
+            }
+            function dogrun()
+            {
+                if(d==0)
+                {
+                    document.getElementById("run").src = "5.jpeg";
+                    d=1;
+                }
+                else if(d==1)
+                {
+                    document.getElementById("run").src = "8.jpeg";
+                    d=0;
+                }
+                
+            }
+            function eatingdog()
+            {
+                if(h==0)
+                {
+                    document.getElementById("eat").src="10.jpeg";
+                    h=1;
+                }
+
+                else
+                {
+                    document.getElementById("eat").src="9.jpeg";
+
+                    h=0;
+                }
+
+            }
+
+            function handshake()
+            {
+                if(s==0)
+
+                {
+                    document.getElementById("shake").src="7.jpeg";
+                    s=1;
+                }
+                else
+                {
+                    document.getElementById("shake").src="6.jpeg";
+                    s=0;
+                }
+            }
+        </script>
+</head>
+<body>
+    
+    <div class="topnav" align="center" >
+        
+        <a class="txt" href="home.html">Mouse Event</a>
+        <a class="txt" href="re.html">Regular Expression</a>
+          
+    </div>
+    <p align="center" style="color: black;">Moulish G A <br> CH.EN.U4CYS21045</p>  
+
+    <center><h1>Amma</h1>
+        <h3></h3>    
+        <h3>Left Click</h3>
+        <br>
+        <img src="1.jpg"  onclick="sitstand()" id="switch">
+        <h3 >Hover</h3>
+        <img src="3.jpeg" onmouseenter="dog()" onmouseleave="dog()" id="pet">
+        <br>
+        <h3 >Double Click</h3>
+        <img src="7.jpeg" height="300px"  ondblclick="handshake()" id="shake">
+        <br>
+        <h3 >Right Click</h3>
+        <img src="10.jpeg" height="300px" contextmenu="eatingdog1" oncontextmenu="eatingdog()" id="eat">
+        <br>
+        <h3 >Move Mouse</h3>
+        <img src="5.jpeg" onmousedown="dogrun()" onmouseup="dogrun()" id="run">
+    </center>
+</body>
+</html>

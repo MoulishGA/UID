@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>Regular Expression</title>
+<style>
+        body {
+            height: 600px;
+            top: 0%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .navbar {
+            overflow: hidden;
+            background-color: rgb(111, 108, 108);
+            padding-left: 550px;
+        }
+
+        .navbar a {
+            float: left;
+            font-size: 16px;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            background-color: white;
+        }
+
+        .navbar a.active {
+            background-color: #ddd;
+            ;
+            color: black;
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: 1.2em;
+        }
+
+        h3 {
+            font-size: 1.3em;
+        }
+
+        *{
+            color: black;
+
+            
+        }
+        .topnav{
+            overflow: hidden;
+            background-color: #0ac70a;
+            padding: 1%;
+        }
+        div>a{
+            padding-left: 12px;
+        }
+        .txt{
+            text-decoration: none;
+            color: black;
+        }
+        a.txt:hover{
+            color: #ffffff;
+        }
+        body 
+        {
+            background: linear-gradient(to right, #ffffff 50%, #aaaaaa 100%);
+}
+</style>
+</head>
+
+<body>
+    <div class="topnav" align="center">
+        
+        <a class="txt" href="home.html">Mouse Event</a>
+        <a class="txt" href="re.html">Regular Expression</a>
+          
+    </div>
+    <p align="center"style="color: black;">Moulish G A <br> CH.EN.U4CYS21045</p>
+      <br><br><br>
+
+    <center>
+        
+        <div class="container block">
+            <h1>FINDING THE WORD IN A SENTENCE</h1>
+            <h2>Sentence : </h2>
+            <h3>AMMA IS A SPRITUAL LEADER OF INDIA</h3>
+            <p><button onclick="finder()">Click Me </button> </p>
+
+<br><br>
+            <p id="demo"></p>
+            <h1>FINDING AND REPLACE THE WORD IN A SENTENCE</h1>
+            <h3 id="ALSO">AMMA IS ALSO SPRITUAL LEADER OF INDIA</h3>
+            <p>To replace ALSO with A GREAT </p>
+                <button onclick="rep()">Click Me</button> 
+        </div>
+    </center>
+    <script>
+        function finder() {
+            let text = "AMMA IS ALSO SPRITUAL LEADER OF INDIA";
+            let n = text.search(/AMMA/i);
+            document.getElementById("demo").innerHTML = "AMMA found at : " + n;
+        }
+
+        function rep() {
+            let text = document.getElementById("ALSO").innerHTML;
+            document.getElementById("ALSO").innerHTML = text.replace(/ALSO/i, "A GREAT");
+        }
+    </script>
+
+</body>
+
+</html>
