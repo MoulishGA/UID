@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  <form>
+    <div align="center"class="container">
+      <center>
+        <h1>SIGNUP HERE</h1>
+      </center>
+      <hr>
+      <label> USERNAME </label><br>
+      <input type="text" name="firstname" placeholder="ENTER HERE" size="15" required /> <br>
+      <label> EMAIL ID </label><br>
+      <input type="text" name="middlename" placeholder="ENTER HERE" size="15" required /> <br>
+      <label> PASSWORD </label><br>
+      <input type="text" name="lastname" placeholder="ENTER HERE" size="15" required /> <br>
+      <label> MOBILE NO</label><br>
+      <input type="text" name="phone" placeholder="ENTER HERE" size="10"/ required> <br>
+      Enter the CAPTCHA
+      <div id="captchaBackground">
+        <canvas id="captcha">captcha text</canvas>
+        <input align="center" id="textBox" type="text" name="text" placeholder="Enter The Captcha Here">
+        <div id="buttons">
+          <input id="submitButton" type="submit">
+          <button id="refreshButton" type="submit">Refresh</button>
+        </div>
+        <span id="output"></span>
+      </div>
+      <script src="valid.js"></script>
+      <script src="script.js"></script>
+      </div>
+  </form></body></html>
