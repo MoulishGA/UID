@@ -1,0 +1,148 @@
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  padding-left: 50px;
+}
+
+.header a:hover {
+  background-color: rgb(255, 141, 238);
+  color: black;
+}
+
+.header a.active {
+  background-color: rgb(255, 0, 166);
+  color: white;
+}
+
+.header-right {
+  float: right;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+.bottom {
+    overflow: hidden;
+    border-radius:0px;
+    color: #b65858;
+    display: block;
+    border-style:groove;
+    padding-bottom: 100px; 
+    background-color: #f1f1f1;
+}
+
+.about-1{
+    margin: 30px;
+    padding: 5px;
+}
+
+ .para
+ {
+  padding-left: 50px;
+  padding-top: 300px;
+  font-size: large;
+ }   
+
+.about-1 p{
+    text-align: center;
+    font-size: xx-large;
+    padding: 3px;
+    color: rgb(42, 12, 12);
+    background-color: #ff007b;
+}
+
+
+.about-item{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 80px 30px;
+    box-shadow: 0 0 9px rgba(0,0,0.6);
+}
+
+
+.about-item i{
+    font-size: 43px;
+    margin: 0;
+}
+
+
+.about-item h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
+.about-item hr{
+    width: 46px;
+    height: 3px;
+    background-color: #f60cd3;
+    margin: 0 auto;
+    border: none;
+    text-align: center;
+}
+
+
+.about-item:hover{
+    background-color: #ff007b;
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover p{
+    color: #fff;
+}
+.about-item:hover hr{
+    background-color: #fff;
+}
+
+
+.about-item:hover i{
+    transform: translateY(-20px);
+}
+.about-item:hover i,
+.about-item:hover h3,
+.about-item:hover hr{
+    transition: all 400ms ease-in-out;
+}
+
+.ab{
+    background-color:yellow;
+  width: 1250px;
+  height: 500px;
+  padding: 25px;
+  border: 5px solid black;
+  margin:100px;
+}
+.wrapper{
+    width: 1170px;
+    margin: auto;
+}
