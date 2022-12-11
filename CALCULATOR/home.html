@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Tractor Mileage</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="cal.js"></script>
+</head>
+
+<body bgcolor=#ffe1e1>
+<div class="font1"><br><br>
+    <h1 align="center" style="color: #d2001a;">All in One Tractor Mileage Calculator</h1>
+    <table class="calculator">
+        <tr>
+            <td style="width:11px" colspan="3"> <input class="display-box" type="text" placeholder="Enter the value" id="invalue" disabled /> </td>
+
+            <!-- clearScreen() function clears all the values -->
+            
+            
+        </tr>
+        <tr>
+            <!-- display() function displays the value of clicked button -->
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+        </tr>
+        <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+            
+        </tr>   
+        <tr colspan="2"><td style="color: #ff0000;"></td></tr>
+        <tr >
+            <td> <input type="button" value="Hrs to Kms" onclick="calculate1()" /> </td>
+            <td> <input type="button" value="Acre to Hrs" onclick="calculate2()" /> </td>
+            <td> <input type="button" value="Money to Litre" onclick="calculate3()" /> </td>
+        </tr>
+        <tr >
+            <td> <input type="button" value="Litre to Kms" onclick="calculate4()" /> </td>
+            <td> <input type="button" value="Litre to Hrs" onclick="calculate5()" /> </td>
+            <td> <input type="button" value="Litre to Money" onclick="calculate6()" /> </td>
+        </tr>
+    </table>
+    <br>
+    <center>
+        <br>
+    <div class="calc1">
+    <input class="display-box" type="text" placeholder="Result value" id="result" disabled />
+    </center>
+</div>
+</div>
+</body>
+
+</html>
